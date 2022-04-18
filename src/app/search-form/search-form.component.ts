@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-form.component.css']
 })
 export class SearchFormComponent implements OnInit {
-  userName!: string; 
+  username: string | undefined; 
 
-  constructor() { }
+  constructor(private userService : UserService) { }
+  
+  findUser (){
+    this.userService.updateUser(this.username);
+
+  }
+
 
   ngOnInit(): void {
   }
