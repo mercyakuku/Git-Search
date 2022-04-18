@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
+  repos:any;
+  profile:any;
+  userName:string;
 
   constructor() { }
 
