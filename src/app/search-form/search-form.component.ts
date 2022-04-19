@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
-import { SearchGithubService } from '../user-service.service';
+import { UserRepositoriesService } from '../user-repositories.service';
 
 @Component({
   selector: 'app-search-form',
@@ -12,18 +12,20 @@ export class SearchFormComponent implements OnInit {
   user!: User;
 	username!: string; // Gotten from the form username input
  // Gotten from the form username input
-	searchGithubService:SearchGithubService; // Declare the searchGithubService which is of type SearchGithubService we imported from src/app/search-github.service  
+	// Gotten from the form username input
+  userRepositoriesService: UserRepositoriesService; // Declare the searchGithubService which is of type SearchGithubService we imported from src/app/search-github.service  
+ // Declare the searchGithubService which is of type SearchGithubService we imported from src/app/search-github.service  
   public showInput = true; // Assign showInput boolean value true
   public showData = false; // Assign showData boolean value false
 
 
 	submitUsername() {
-		this.searchGithubService.getUserData(this.username); // Passing the username entered as an arguement to getUserData function in our service then fed to the API for a response if the user exists
+		this.userRepositoriesService.getUserData(this.username); // Passing the username entered as an arguement to getUserData function in our service then fed to the API for a response if the user exists
     this.showInput = false;
     this.showData = true;
 	}
 
-  showUserInput(hideInput) {
+  showUserInput(hideInput: boolean) {
     this.showInput = hideInput;
     this.showData = false;
   }
@@ -42,8 +44,8 @@ export class SearchFormComponent implements OnInit {
   // }
 
 
-  constructor(searchGithubService:SearchGithubService) { 
-		this.searchGithubService = searchGithubService;
+  constructor(userRepositoriesService:UserRepositoriesService) { 
+		this.userRepositoriesService = userRepositoriesService;
 	}
 
   ngOnInit(): void {
