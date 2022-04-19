@@ -9,9 +9,9 @@ export class LandingPageComponent implements OnInit {
 
     //users:User;
 
-    profile: any;
-    repos: any;
-    userName: string;
+    // profile: any;
+    // repos: any;
+    // userName: string;
 
   constructor() { 
     // private userService: UserService, private repositoryService: RepositoryService
