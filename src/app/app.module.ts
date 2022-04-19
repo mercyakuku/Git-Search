@@ -4,17 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SearchFormComponent } from './search-form/search-form.component';
-import { RepositoriesComponent } from './repositories/repositories.component';
+import { UserRepositoriesComponent } from './user-repositories/user-repositories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingPageComponent,
     SearchFormComponent,
-    RepositoriesComponent
+    UserRepositoriesComponent,
   ],
   imports: [
     BrowserModule,
