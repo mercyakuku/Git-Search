@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { SearchGithubService } from '../user-service.service';
 
 @Component({
   selector: 'app-search-form',
@@ -7,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchFormComponent implements OnInit {
  
-  user:User;
-	username: string; // Gotten from the form username input
+  user!: User;
+	username!: string; // Gotten from the form username input
+ // Gotten from the form username input
 	searchGithubService:SearchGithubService; // Declare the searchGithubService which is of type SearchGithubService we imported from src/app/search-github.service  
   public showInput = true; // Assign showInput boolean value true
   public showData = false; // Assign showData boolean value false

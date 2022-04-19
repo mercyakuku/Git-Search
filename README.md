@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # By mercyakuku
 
 # Description
-This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories. Everyone is therefore required to use their own unique key. These keys are referred to as "Personal Access Tokens".
+This is an Angular App that uses Github API to retrieve user data. Users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories. Everyone is therefore required to use their own unique key. These keys are referred to as "Personal Access Tokens".
 
 # Technologies Used
 * Typescript
