@@ -14,15 +14,15 @@ This is an Angular App that uses Github API to retrieve user data. Users may ent
 * CSS
 
 ## Live Page
-https://mercyakuku.github.io/Github-Search/
+https://mercyakuku.github.io/Git-Search/
 
 ## Setup/Installation Requirements
 For a collaborator to open this page, he or she is required to:
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone https://github.com/mercyakuku/Github-Search.git
+* git clone https://github.com/mercyakuku/Git-Search.git
 
-* cd Github-Search
+* cd Git-Search
 
 * code . or atom . depending on the text editor of your choice.
 
