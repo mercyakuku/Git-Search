@@ -3,12 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { RepositoriesComponent } from './repositories/repositories.component';
 
 const routes: Routes = [
-  { path:"User",component:LandingPageComponent}, 
-	{ path:"Repositories",component:RepositoriesComponent },
+  // { path:"User",component:}, 
+ 	// { path:"Repositories",component:}, 
 ];
 
 @NgModule({
